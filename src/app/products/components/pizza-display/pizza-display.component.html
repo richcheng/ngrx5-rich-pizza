@@ -1,0 +1,5 @@
+<div class="pizza-display__base">
+  <img src="assets/images/pizza.svg">
+  <img *ngFor="let topping of pizza?.toppings; index as i;" src="assets/images/toppings/{{ topping.name }}.svg" [style.zIndex]="i"
+    class="pizza-display__topping" @drop>
+</div>

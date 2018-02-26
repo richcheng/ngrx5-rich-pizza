@@ -1,0 +1,41 @@
+@import '../../../../styles';
+
+:host {
+  position: relative;
+  display: block;
+}
+
+.products {
+  &__new {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+    margin: -35px -35px 35px;
+    background-color: #f9f9f9;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    pizza-item {
+      flex: 0 0 33%;
+      margin: 0 0 55px;
+      background-color: #ffffff;
+      transition: all 200ms ease;
+
+      @include mobile {
+        margin: 0 0 15px;
+      }
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}

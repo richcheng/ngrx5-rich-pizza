@@ -1,0 +1,60 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+.app {
+  &__header {
+    position: relative;
+    padding: 35px 0;
+    text-align: center;
+  }
+
+  &__logo {
+    width: 75px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #ab131b;
+    border-radius: 4px 4px 0 0;
+
+    a {
+      color: #ffffff;
+      padding: 15px 35px;
+      font-family: 'cornerstone';
+
+      &.active {
+        background-color: #921217;
+      }
+    }
+  }
+
+  &__content {
+    max-width: 1000px;
+    margin: 0 auto 50px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+
+  &__container {
+    padding: 35px;
+  }
+
+  &__footer {
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #0f9675;
+    border-radius: 0 0 4px 4px;
+
+    p {
+      margin: 0;
+      font-weight: 600;
+    }
+  }
+}
